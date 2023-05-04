@@ -1,5 +1,14 @@
 package com.sofiene.dropshop.repository;
 
-public interface Deliveryinterface {
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.sofiene.dropshop.models.Delivery;
+
+;
+
+public interface Deliveryinterface extends CrudRepository<Delivery, Long>{
+	List<Delivery> findAll(); 
 
 }
